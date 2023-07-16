@@ -15,7 +15,7 @@ import torchaudio
 import argparse
 
 from spectrogram_params import SpectrogramParams
-from  
+from util import audio_util, torch_util
 
 #code to convert an audio file to a spectrogram
 
@@ -166,5 +166,11 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     print(args.filename)
+
+    params = SpectrogramParams()
+
+    
+
+    converter = SpectrogramConverter()
 
     
